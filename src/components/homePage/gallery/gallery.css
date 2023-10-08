@@ -1,0 +1,96 @@
+.gallery {
+    
+}
+
+.galleryName {
+    color: #BCA4FF;
+    font-size: 16px;
+    font-weight: 600px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin: 83px 0 36px 0;
+}
+
+.galleryTitle {
+    color: #4E4B66;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    max-width: 515px;
+    margin-bottom: 36px;
+}
+
+.galleryList {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.galleryListItem {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    height: 603px;
+    width: 569px;
+}
+
+.galleryList::-webkit-scrollbar {
+    height: 20px;
+}
+
+.galleryList::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 15px 15px rgb(188,164,255,0.8);
+    border: solid 5px transparent;
+    background: transparent;
+    border-radius: 10px;
+    transition: all .25s;
+}
+
+/* Изменение цвета рычага при наведении на него */
+.galleryList::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0 0 15px 15px rgb(188, 164, 255, 1);
+}
+
+@media screen and (max-width: 1199px) {
+    .galleryListItem {
+        height: 380px;
+        width: 359.34px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .galleryListItem {
+        height: 300px;
+        width: 283.08px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .galleryListItem {
+        height: 340px;
+        width: 321.28px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .galleryListItem {
+        height: 364px;
+        width: 343px;
+    }
+
+    .galleryList {
+        margin-left: 40px;
+    }
+
+    .galleryTitle {
+        font-size: 32px;
+        max-width: 350px;
+        line-height: 38px;
+        margin-left: 40px;
+    }
+
+    .galleryName {
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,157 @@
+.reviewName {
+    color: #BCA4FF;
+    font-size: 16px;
+    font-weight: 600px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin: 83px 0 36px 0;
+}
+
+.reviewTitle {
+    color: #4E4B66;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    max-width: 577px;
+    margin-bottom: 36px;
+}
+
+.reviewCardList {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviewCard {
+    width: 31%;
+    position: relative;
+}
+
+.reviewCardItem {
+    border-radius: 20px;
+    border: #E4DAFF solid 1px;
+}
+
+.reviewCardItem img {
+    position: absolute;
+    top: 0;
+    margin-left: 30%;
+}
+
+.reviewCardItem {
+    margin-top: 80px;
+    padding-top: 80px;
+}
+
+.reviewCardTextTitle p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.reviewCardTextTitle p:nth-child(1) {
+    color: #5F2EEA;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.reviewCardTextTitle p:nth-child(2) {
+    color: #5F2EEA;
+    font-weight: 400px;
+    margin-top: 5px;
+    position: relative;
+    flex-direction: column;
+}
+
+.reviewCardTextTitle::after {
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 20px auto;
+    width: 65%;
+    background-color: #E4DAFF;
+}
+
+.reviewCardTextDescription {
+    margin: 21px 33px 42px 33px;
+    max-width: 303px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    line-height: 34px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4E4B66;
+
+}
+
+@media screen and (max-width:1199px) {
+    .reviewCardItem img {
+        margin-left: 25%;
+    }
+
+    .reviewCardTextTitle::after {
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 15px auto;
+    width: 65%;
+    background-color: #E4DAFF;
+    }
+
+    .reviewCardTextDescription {
+        margin-top: 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .reviewCardItem img {
+        margin-left: 39.5%;
+    }
+
+    .reviewCardList {
+        flex-direction: column;
+    }
+
+    .reviewCard {
+        width: 100%;
+    }
+
+    .reviewCardTextTitle p:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .reviewCardTextDescription {
+        max-width: 80%;
+        margin: 0 auto 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .reviewCardItem img {
+            margin-left: 37%;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .reviewTitle {
+        font-size: 32px;
+        max-width: 300px;
+        line-height: 38px;
+        margin-left: 40px;
+    }
+
+    .reviewName {
+        margin-left: 40px;
+    }
+
+    .reviewCardItem {
+        max-width: 84%;
+        margin-left: 40px;
+    }
+
+    .reviewCardItem img {
+        margin-left: 26%;
+    }
+}

@@ -1,0 +1,165 @@
+.introContent {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('./img/introBackground.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    border-bottom: 1px solid #D9DBE9;
+}
+
+.introBackground {
+    position: absolute;
+    width: 1090px;
+    height: 634px;
+    right: 0;
+}
+
+/*TITLE*/
+
+.introTitle {
+    color: #4E4B66;
+    font-weight: 700;
+    font-size: 64px;
+
+    margin-top: 10%;
+
+    max-width: 669px;
+}
+
+/*BUTTONS*/
+
+.introButtons {
+    display: flex;
+
+    margin-top: 3%;
+}
+
+.introBtnBegin {
+    background-color: #5F2EEA;
+    outline: 0;
+    width: 243px;
+    height: 64px;
+    border: 0;
+    border-radius: 35px;
+
+    margin: 0 25px 0 0;
+
+    color: #F7F7FC;
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: all .35s;
+    cursor: pointer;
+}
+
+.introBtnReview {
+    background-color: #F7F7FC;
+    outline: 0;
+    width: 243px;
+    height: 64px;
+    border: 2px solid #5F2EEA;
+    border-radius: 35px;
+
+    color: #5F2EEA;
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: all .35s;
+    cursor: pointer;
+}
+
+.introBtnReview:hover {
+    background-color: #5F2EEA;
+    color: #F7F7FC;
+}
+
+.introBtnBegin:hover {
+    background-color: #F7F7FC;
+    color: #5F2EEA;
+    border: 2px solid #5F2EEA;
+}
+
+@media screen and (max-width: 991px) {
+    .introContent {
+        height: 55vh;
+    }
+
+    .introTitle {
+        font-size: 42px;
+        max-width: 420px;
+    }
+
+    .introButtons {
+        flex-direction: column;
+    }
+
+    .introBtnBegin {
+        width: 220px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .introBtnReview {
+        width: 220px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .introContent {
+        height: 65vh;
+        background-position: center;
+    }
+    .introTitle {
+        margin-top: 68px;
+        font-size: 38px;
+        max-width: 380px;
+    }
+
+    .introButtons {
+        flex-direction: column;
+    }
+
+    .introBtnBegin {
+        width: 220px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .introBtnReview {
+        width: 220px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .introContent {
+        background-position: top;
+        background-size: contain;
+        background-position-x: -60px;
+    }
+
+    .introTitle {
+        max-width: 250px;
+        margin-top: 220px;
+        margin-left: 51px;
+    }
+
+    .introBtnBegin {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .introBtnReview {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

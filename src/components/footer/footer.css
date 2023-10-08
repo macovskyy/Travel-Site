@@ -1,0 +1,164 @@
+.footerContent {
+    display: flex;
+    margin: 90px 0 90px 0;
+}
+
+/*First Block*/
+.firstBlock {
+    width: 39.9%;
+}
+
+.footerLogo {
+    font-weight: 600;
+    color: #5F2EEA;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 0.75px;
+    line-height: 32px;
+}
+
+.footerDescription {
+    max-width: 310px;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0.75px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.footerDescription span {
+    font-weight: 600;
+}
+
+/* Footer List Blocks */
+
+.footerList {
+    width: 21.5%;
+}
+
+.footerListTittle {
+    color: #14142B;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+.footerList li {
+    margin-bottom: 22px;
+    color: #6E7191;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+}
+
+/* Fourth Block */
+.fourthBlockContact {
+    color: #5F2EEA;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+
+.fourthBlockDescription {
+    max-width: 155px;
+    color: #6E7191;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1199px) {
+    .footerLogo {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .footerLogo {
+        margin-bottom: 20px;
+    }
+
+    .footerDescription {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 200px;
+    }
+
+    .footerList {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footerContent {
+        flex-wrap: wrap;
+    }
+
+    .firstBlock {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .footerDescription {
+        max-width: 100%;
+        line-height: 22px;
+    }
+
+    .footerList {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .firstBlock {
+        max-width: 421px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footerLogo {
+        text-align: center;
+        font-size: 34.38px;
+        line-height: 55px;
+        letter-spacing: 0;
+        font: 700px;
+    }
+
+    .footerDescription {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.75px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    .footerList {
+        display: none;
+    }
+
+    .fourthBlock {
+        text-align: center;
+        width: 100%;
+    }
+
+    .fourthBlockContact {
+        font-size: 16px;
+    }
+
+    .fourthBlockDescription {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 301px;
+    }
+
+    .footerListTittle {
+        font-size: 20px;
+    }
+}
